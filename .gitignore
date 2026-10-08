@@ -1,0 +1,11 @@
+.pytest_cache/
+.ruff_cache/
+.venv/
+.release-tools/
+.DS_Store
+__pycache__/
+*.py[cod]
+build/
+dist/
+*.egg-info/
+vendor/*.whl

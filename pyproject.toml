@@ -1,0 +1,61 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "commerce-one"
+version = "0.1.0"
+description = "Native fail-closed runtime for the immutable Commerce-1 decision model."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = { text = "Apache-2.0" }
+authors = [{ name = "InferCrane contributors" }]
+dependencies = []
+
+[project.optional-dependencies]
+test = [
+  "fastapi==0.141.1",
+  "httpx==0.28.1",
+  "pydantic==2.12.4",
+  "pytest==8.4.2",
+  "ruff==0.13.2",
+]
+release = [
+  "huggingface-hub==1.31.0",
+]
+v3-runtime = [
+  "accelerate==1.15.0",
+  "fastapi==0.141.1",
+  "flash-linear-attention==0.5.2",
+  "huggingface-hub==1.31.0",
+  "kernels==0.16.1",
+  "numpy==2.5.3; python_version >= '3.12'",
+  "pillow==12.3.0",
+  "pydantic==2.12.4",
+  "safetensors==0.8.0",
+  "torch==2.14.0",
+  "torchvision==0.29.0",
+  "transformers==5.17.0",
+  "uvicorn==0.52.4",
+]
+
+[project.scripts]
+commerce-1-v3-serve = "infercrane_commerce_1.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/infercrane_commerce_1"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"src/infercrane_commerce_1/py.typed" = "infercrane_commerce_1/py.typed"
+"src/infercrane_commerce_1/requirements.txt" = "infercrane_commerce_1/requirements.txt"
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]

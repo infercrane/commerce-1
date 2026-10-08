@@ -1,0 +1,57 @@
+{
+  "artifact_transform_sha256": "ac7ae1330b4e912697b11ddb41770121f37ff88047e5f2046e3a338f9307d561",
+  "calibration_file_sha256": "4164c7a2dee99f02920bde48b3ea989e45ef8abe8de4399c1c67e700dc7edf93",
+  "contract_sha256": "5928baf94f9ee870a259fe56e0827285d529593d680e8255cd6b0731957c6d33",
+  "current_leaderboard": {
+    "edition": "0.3",
+    "note": "Commerce-1 has no official Decision Index 0.3 Full Score or current rank.",
+    "official_full_score": null,
+    "official_rank": null,
+    "rank_claimed": false
+  },
+  "model_id": "infercrane/Commerce-1",
+  "native_runtime_qualification": {
+    "current_for_release": true,
+    "maximum_input_tokens": 65536,
+    "publication_performed": false,
+    "public_projection_attestation_sha256": "2b01ab21b12c1d1c555688f205717708ade4a1b0a5b415aec08d36148c8e3639",
+    "public_projection_schema": "infercrane-commerce-1-public-runtime-qualification/v2",
+    "question_microbatch_size": 1,
+    "status": "PASS_NATIVE_RUNTIME_QUALIFICATION"
+  },
+  "evaluated_artifact_sha256": "b7fba0cceb1b57834fecacfbcb5e361d94fa185e877e891f4e43fc25c6458a1d",
+  "public_evaluation": {
+    "added": 30419,
+    "counts": {
+      "ok": 150317
+    },
+    "edition": "0.2.1",
+    "evaluation_authority": "self_hosted",
+    "excluded_selected": 442,
+    "historical_release_baseline": "52.55",
+    "margin_over_historical_baseline": "8.44",
+    "merged": 150317,
+    "results_sha256": "a8e6241e86614c95d224090bb361c8ec92153256fe2e114ed6e9f6041bc69ad4",
+    "scope": "complete_public_suite",
+    "score": "60.99",
+    "scores_sha256": "3b7873ef330b1b6d9dfa8a246b028d3dd392adf6eb4d706370aa8e371a5c3765",
+    "selected_in_edition": 120340,
+    "selected_scoreable": 119898,
+    "status": "PASS_COMPLETE_LOCAL_REPRODUCTION"
+  },
+  "publication_performed": false,
+  "post_launch_evidence": {
+    "official_v0_3_maintainer_evaluation": "pending",
+    "public_v0_3_evaluation": "pending_content_bound_public_artifact"
+  },
+  "receipt_sha256": "e608074ea8ecb9de34424e21bf002c2438c8e852e64fca60b6ee5bea6e11c7cb",
+  "release_artifact_sha256": "f97262c59b102a39ae37826ffe1e1db8ddabaa1ec95b4e73bcb44328420ace57",
+  "release_gates": {
+    "exact_public_v0_2_1": "complete",
+    "native_runtime_qualification": "complete",
+    "private_stage_and_byte_verification": "pending",
+    "public_transition": "pending"
+  },
+  "schema_version": "infercrane-commerce-1-public-evidence-snapshot/v4",
+  "status": "PUBLIC_EVALUATION_AND_RUNTIME_QUALIFICATION_COMPLETE"
+}
